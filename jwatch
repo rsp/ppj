@@ -1,0 +1,42 @@
+#!/bin/bash
+
+# jwatch by Rafał Pocztarski
+# https://github.com/rsp/ppj
+
+n=$1
+l=0
+f=$n.java
+
+if [ ! -f $n.java ]
+then
+cat << 'end' | sed "s/Tmpl/$n/g" >> $f
+
+public class Tmpl {
+
+    public static void main(String[] args) {
+
+        System.out.println();
+
+    }
+
+}
+
+end
+fi
+
+subl $f
+
+while true;
+do
+    m=`date +%s -r $f`
+    if [ $m -ne $l ]; then
+        echo -e '\n========================================================================\n'
+        # yes = | head -n$(($COLUMNS-2)) | tr -d '\n'; echo
+        javac $f && java $n
+    fi
+    l=$m
+    sleep 1
+done
+
+
+

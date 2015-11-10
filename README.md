@@ -34,6 +34,21 @@ for (int j = -m; j <= m; j++) {
 
 Sometimes absolute values in loops can be useful.
 
+### LoopArithmetic
+
+[LoopArithmetic.java](https://github.com/rsp/ppj/blob/master/LoopArithmetic.java)
+
+```java
+int m = 5;
+for (int j = 0; j <= 2*m; j++) {
+    for (int i = 0; i <= 2*m; i++)
+        System.out.print((i-j)*(2*m-j-i) < 0 ? " " : "*");
+    System.out.println();
+}
+```
+
+Using arithmetic operations to simplify loops at the expense of readability.
+
 Download
 --------
 Latest version in a ZIP file:

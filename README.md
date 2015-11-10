@@ -8,7 +8,7 @@ Bitwise operators
 ### BitwiseOne
 
 [BitwiseOne.java](https://github.com/rsp/ppj/blob/master/BitwiseOne.java)
-([download](https://rawgit.com/rsp/ppj/master/BitwiseOne.java))
+([download](https://raw.githubusercontent.com/rsp/ppj/master/BitwiseOne.java))
 
 ```java
 int a, b;
@@ -23,7 +23,7 @@ It uses two `int` variables, a single loop and only digit `1` in literals.
 ### AbsLoops
 
 [AbsLoops.java](https://github.com/rsp/ppj/blob/master/AbsLoops.java)
-([download](https://rawgit.com/rsp/ppj/master/AbsLoops.java))
+([download](https://raw.githubusercontent.com/rsp/ppj/master/AbsLoops.java))
 
 ```java
 int m = 5;
@@ -39,7 +39,7 @@ Sometimes absolute values in loops can be useful.
 ### LoopArithmetic
 
 [LoopArithmetic.java](https://github.com/rsp/ppj/blob/master/LoopArithmetic.java)
-([download](https://rawgit.com/rsp/ppj/master/LoopArithmetic.java))
+([download](https://raw.githubusercontent.com/rsp/ppj/master/LoopArithmetic.java))
 
 ```java
 int m = 5;

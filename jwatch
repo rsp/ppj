@@ -39,7 +39,7 @@ public class Tmpl {
 end
 fi
 
-subl $f
+command -v subl >/dev/null 2>&1 && subl $f
 
 while true;
 do

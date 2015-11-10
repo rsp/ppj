@@ -7,6 +7,21 @@ n=$1
 l=0
 f=$n.java
 
+echo -e "\njwatch - https://github.com/rsp/ppj"
+
+if [ -z "$n" ]
+then
+cat << 'end'
+
+Usage: jwatch ClassName
+
+jwatch creates a new Java class with empty main() if none exists
+and then watches for changes, compiles and runs the code.
+
+end
+exit 1
+fi
+
 if [ ! -f $n.java ]
 then
 cat << 'end' | sed "s/Tmpl/$n/g" >> $f
@@ -31,12 +46,9 @@ do
     m=`date +%s -r $f`
     if [ $m -ne $l ]; then
         echo -e '\n========================================================================\n'
-        # yes = | head -n$(($COLUMNS-2)) | tr -d '\n'; echo
         javac $f && java $n
     fi
     l=$m
     sleep 1
 done
-
-
 

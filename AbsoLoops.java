@@ -1,4 +1,4 @@
-public class AbsLoops {
+public class AbsoLoops {
 
     // https://github.com/rsp/ppj
 

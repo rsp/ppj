@@ -20,10 +20,10 @@ for (a=b=(1<<11)-1; a<1<<(11<<1); a<<=1,b>>=1)
 The result of running that program may not be obvious.
 It uses two `int` variables, a single loop and only digit `1` in literals.
 
-### AbsLoops
+### AbsoLoops
 
-[AbsLoops.java](https://github.com/rsp/ppj/blob/master/AbsLoops.java)
-([download](https://raw.githubusercontent.com/rsp/ppj/master/AbsLoops.java))
+[AbsoLoops.java](https://github.com/rsp/ppj/blob/master/AbsoLoops.java)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/AbsoLoops.java))
 
 ```java
 int m = 5;

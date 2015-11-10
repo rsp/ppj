@@ -25,7 +25,6 @@ fi
 if [ ! -f $n.java ]
 then
 cat << 'end' | sed "s/Tmpl/$n/g" >> $f
-
 public class Tmpl {
 
     public static void main(String[] args) {
@@ -35,7 +34,6 @@ public class Tmpl {
     }
 
 }
-
 end
 fi
 

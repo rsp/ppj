@@ -50,6 +50,33 @@ for (int j = 0; j <= 2*m; j++) {
 
 Using arithmetic operations to simplify loops at the expense of readability.
 
+### Mirror
+
+[Mirror.java](https://github.com/rsp/ppj/blob/master/Mirror.java)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/Mirror.java))
+
+```java
+static String mirror(String s) {
+    return mirror(s, "");
+}
+static String mirror(String s, String m) {
+    return s.length() == 0 ? m :
+        mirror(s.substring(1), s.substring(0,1) + m);
+}
+```
+
+Using method overloading to simplify recursion.
+
+Not as nice as JS:
+
+```js
+function mirror(s) {
+    return s.split('').reverse().join('');
+}
+```
+
+but still pretty good for Java.
+
 Download
 --------
 Latest version in a ZIP file:

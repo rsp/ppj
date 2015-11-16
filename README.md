@@ -78,6 +78,43 @@ function mirror(s) {
 
 but still pretty good for Java.
 
+### WhereEven
+
+[WhereEven.java](https://github.com/rsp/ppj/blob/master/WhereEven.java)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.java))
+
+```java
+static int[] even(int[] t) {
+    int i, j;
+    for (i=j=0; i < t.length; i++)
+        if (t[i] % 2 == 0) j++;
+    int[] r = new int[j];
+    for (i=j=0; i < t.length; i++)
+        if (t[i] % 2 == 0) r[j++] = t[i];
+    return r;
+}
+```
+Returns an array with only even numbers. It's very hard to write in a less verbose way in Java. For a comparison, here is the same in JS:
+
+[WhereEven.js](https://github.com/rsp/ppj/blob/master/WhereEven.js)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.js))
+
+```js
+function even(t) {
+    return t.filter(x => x % 2 == 0);
+}
+```
+
+It's even better in Scheme:
+
+[WhereEven.scm](https://github.com/rsp/ppj/blob/master/WhereEven.scm)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.scm))
+
+```scheme
+(define (even t)
+    (filter even? t))
+```
+
 Download
 --------
 Latest version in a ZIP file:

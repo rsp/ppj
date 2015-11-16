@@ -94,7 +94,7 @@ static int[] even(int[] t) {
     return r;
 }
 ```
-Returns an array with only even numbers. It's very hard to write in a less verbose way in Java. For a comparison, here is the same in JS:
+Returns an array with only even numbers. It's very hard to write in a less verbose way in Java because of poor support for higher order functions. For a comparison, here is the same in JS:
 
 [WhereEven.js](https://github.com/rsp/ppj/blob/master/WhereEven.js)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.js))

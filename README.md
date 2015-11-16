@@ -87,7 +87,7 @@ but still pretty good for Java.
 
 ### WhereEven
 
-*(**Note**: I posted a question about this example on Stack Exchange Code Review: [Compact ways to filter even numbers in Java int array](https://codereview.stackexchange.com/questions/110963/compact-ways-to-filter-even-numbers-in-java-int-array) - please post an answer if you can improve it)*
+*(Note: I posted a question about this example on Stack Exchange Code Review: [Compact ways to filter even numbers in Java int array](https://codereview.stackexchange.com/questions/110963/compact-ways-to-filter-even-numbers-in-java-int-array) - please post an answer if you can improve the code below)*
 
 [WhereEven.java](https://github.com/rsp/ppj/blob/master/WhereEven.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.java))

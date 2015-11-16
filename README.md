@@ -180,7 +180,7 @@ function eosort(t) {
 }
 ```
 
-Here is also an non-ES6 version of the above code that should conform to the original version of the language from 1997 (please [post an issue](https://github.com/rsp/ppj/issues) if that is not the case). The only difference is more cluttered syntax but there are still exactly the same expressions:
+Here is also an pre-ES6 version of the above code that should conform to the original ES1 version of the language from 1997 (please [post an issue](https://github.com/rsp/ppj/issues) if that is not the case). The only difference is more cluttered syntax but there are still exactly the same expressions:
 
 [TwoWaySort-es5.js](https://github.com/rsp/ppj/blob/master/TwoWaySort-es5.js)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/TwoWaySort-es5.js))

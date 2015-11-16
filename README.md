@@ -1,6 +1,6 @@
 PPJ
 ===
-Random Java examples:
+Random Java examples - comments, [issues](https://github.com/rsp/ppj/issues), [pull requests](https://github.com/rsp/ppj/pulls) welcome.
 
 * [BitwiseOne](#bitwiseone)
 * [AbsoLoops](#absoloops)

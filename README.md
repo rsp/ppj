@@ -87,6 +87,8 @@ but still pretty good for Java.
 
 ### WhereEven
 
+*(**Note**: I posted a question about this example on Stack Exchange Code Review: [Compact ways to filter even numbers in Java int array](https://codereview.stackexchange.com/questions/110963/compact-ways-to-filter-even-numbers-in-java-int-array) - please post an answer if you can improve it)*
+
 [WhereEven.java](https://github.com/rsp/ppj/blob/master/WhereEven.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.java))
 
@@ -212,7 +214,7 @@ function eosort(t) {
 
 It seems impossible to implement it in Java in a way even remotely as compact as in JS, which seems strange for a language as mature and popular as Java. If anyone can improve the Java code to make it more compact, please [do a pull request](https://github.com/rsp/ppj/pulls) because I want that comparison to be fair.
 
-That example was not chosen specifically to favour JS. It is a school example straight from a Java class.
+That example was not chosen specifically to favour JS. In fact it is a school example straight from a Java class.
 
 Download
 --------

@@ -1,6 +1,13 @@
 PPJ
 ===
-Random Java examples.
+Random Java examples:
+
+* [BitwiseOne](#bitwiseone)
+* [AbsoLoops](#absoloops)
+* [LoopArithmetic](#looparithmetic)
+* [Mirror](#mirror)
+* [WhereEven](#whereeven)
+* [TwoWaySort](#twowaysort)
 
 ### BitwiseOne
 

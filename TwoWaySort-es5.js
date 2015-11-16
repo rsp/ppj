@@ -1,6 +1,6 @@
 function eosort(t) {
 
-    var b = [t.filter(function(x){ return x => x % 2 == 0; }).sort(),
+    var b = [t.filter(function(x){ return x % 2 == 0; }).sort(),
              t.filter(function(x){ return x % 2; }).sort().reverse()],
         i = [0,0], r = t.map(function(x){ return b[x%2][i[x%2]++]; });
 

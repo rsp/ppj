@@ -67,7 +67,8 @@ static String mirror(String s, String m) {
 
 Using method overloading to simplify recursion.
 
-Not as nice as JS:
+Not as nice as [Mirror.js](https://github.com/rsp/ppj/blob/master/Mirror.js)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/Mirror.js)):
 
 ```js
 function mirror(s) {

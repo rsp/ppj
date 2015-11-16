@@ -1,4 +1,4 @@
-public class Mirror {
+public class StringsAndMirrors {
 
     static String mirror(String s) {
         return mirror(s, "");

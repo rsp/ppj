@@ -5,7 +5,7 @@ Random Java examples:
 * [BitwiseOne](#bitwiseone)
 * [AbsoLoops](#absoloops)
 * [LoopArithmetic](#looparithmetic)
-* [Mirror](#mirror)
+* [StringsAndMirrors](#stringsandmirrors)
 * [WhereEven](#whereeven)
 * [TwoWaySort](#twowaysort)
 
@@ -57,10 +57,10 @@ for (int j = 0; j <= 2*m; j++) {
 
 Using arithmetic operations to simplify loops at the expense of readability.
 
-### Mirror
+### StringsAndMirrors
 
-[Mirror.java](https://github.com/rsp/ppj/blob/master/Mirror.java)
-([download](https://raw.githubusercontent.com/rsp/ppj/master/Mirror.java))
+[StringsAndMirrors.java](https://github.com/rsp/ppj/blob/master/StringsAndMirrors.java)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/StringsAndMirrors.java))
 
 ```java
 static String mirror(String s) {
@@ -74,8 +74,8 @@ static String mirror(String s, String m) {
 
 Using method overloading to simplify recursion.
 
-Not as nice as [Mirror.js](https://github.com/rsp/ppj/blob/master/Mirror.js)
-([download](https://raw.githubusercontent.com/rsp/ppj/master/Mirror.js)):
+Not as nice as [StringsAndMirrors.js](https://github.com/rsp/ppj/blob/master/StringsAndMirrors.js)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/StringsAndMirrors.js)):
 
 ```js
 function mirror(s) {

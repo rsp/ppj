@@ -13,12 +13,14 @@ Random Java examples - comments, [issues](https://github.com/rsp/ppj/issues), [p
 
 [BitwiseOne.java](https://github.com/rsp/ppj/blob/master/BitwiseOne.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/BitwiseOne.java))
+
 ```java
 int a, b;
 for (a=b=(1<<11)-1; a<1<<(11<<1); a<<=1,b>>=1)
     System.out.println(Integer.toString(
         (1<<11)|(a^b)&((1<<11)-1),1<<1).replace("1"," "));
 ```
+
 The result of running that program may not be obvious.
 It uses two `int` variables, a single loop, a bunch of bitwise operators
 and only digit `1` in literals.
@@ -27,6 +29,7 @@ and only digit `1` in literals.
 
 [AbsoLoops.java](https://github.com/rsp/ppj/blob/master/AbsoLoops.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/AbsoLoops.java))
+
 ```java
 int m = 5;
 for (int j = -m; j <= m; j++) {
@@ -35,12 +38,14 @@ for (int j = -m; j <= m; j++) {
     System.out.println();
 }
 ```
+
 Sometimes absolute values in loops can be useful.
 
 ### LoopArithmetic
 
 [LoopArithmetic.java](https://github.com/rsp/ppj/blob/master/LoopArithmetic.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/LoopArithmetic.java))
+
 ```java
 int m = 5;
 for (int j = 0; j <= 2*m; j++) {
@@ -49,12 +54,14 @@ for (int j = 0; j <= 2*m; j++) {
     System.out.println();
 }
 ```
+
 Using arithmetic operations to simplify loops at the expense of readability.
 
 ### StringsAndMirrors
 
 [StringsAndMirrors.java](https://github.com/rsp/ppj/blob/master/StringsAndMirrors.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/StringsAndMirrors.java))
+
 ```java
 static String mirror(String s) {
     return mirror(s, "");
@@ -64,21 +71,25 @@ static String mirror(String s, String m) {
         mirror(s.substring(1), s.substring(0,1) + m);
 }
 ```
+
 Using method overloading to simplify recursion.
 
 Not as nice as [StringsAndMirrors.js](https://github.com/rsp/ppj/blob/master/StringsAndMirrors.js)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/StringsAndMirrors.js)):
+
 ```js
 function mirror(s) {
     return s.split('').reverse().join('');
 }
 ```
+
 but still pretty good for Java.
 
 ### WhereEven
 
 [WhereEven.java](https://github.com/rsp/ppj/blob/master/WhereEven.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.java))
+
 ```java
 static int[] even(int[] t) {
     int i, j;
@@ -90,38 +101,46 @@ static int[] even(int[] t) {
     return r;
 }
 ```
+
 Returns an array with only even numbers. It's very hard to write in a less verbose way in Java because of poor support for higher order functions and no built-in filter method for arrays. For a comparison, here is the same in JS:
 
 [WhereEven-es5.js](https://github.com/rsp/ppj/blob/master/WhereEven-es5.js)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven-es5.js))
+
 ```js
 function even(t) {
     return t.filter(function(x){ return x % 2 == 0; });
 }
 ```
+
 It's slightly shorter with ES6 syntax:
 
 [WhereEven.js](https://github.com/rsp/ppj/blob/master/WhereEven.js)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.js))
+
 ```js
 function even(t) {
     return t.filter(x => x % 2 == 0);
 }
 ```
+
 It's even better in Scheme:
 
 [WhereEven.scm](https://github.com/rsp/ppj/blob/master/WhereEven.scm)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven.scm))
+
 ```scheme
 (define (even t)
     (filter even? t))
 ```
+
 Not bad for a language that's 40 years old.
 
 ### TwoWaySort
 
 [TwoWaySort.java](https://github.com/rsp/ppj/blob/master/TwoWaySort.java)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/TwoWaySort.java))
+
 ```java
 static int[] eosort(int[] t) {
 
@@ -154,12 +173,14 @@ static int[] eosort(int[] t) {
 
 }
 ```
+
 This is a pretty compact way to do a two-way sorting of an array (even elements ascending and odd elements descending at the same time, preserving even/odd positions).
 
 But what is written in Java in 19 lines (not including empty lines and the return statement) can be written in JS in just 3 lines:
 
 [TwoWaySort.js](https://github.com/rsp/ppj/blob/master/TwoWaySort.js)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/TwoWaySort.js))
+
 ```js
 function eosort(t) {
 
@@ -171,10 +192,12 @@ function eosort(t) {
 
 }
 ```
+
 Here is also an pre-ES6 version of the above code that should conform to the original ES1 version of the language from 1997 (please [post an issue](https://github.com/rsp/ppj/issues) if that is not the case). The only difference is more cluttered syntax but there are still exactly the same expressions:
 
 [TwoWaySort-es5.js](https://github.com/rsp/ppj/blob/master/TwoWaySort-es5.js)
 ([download](https://raw.githubusercontent.com/rsp/ppj/master/TwoWaySort-es5.js))
+
 ```js
 function eosort(t) {
 
@@ -186,6 +209,7 @@ function eosort(t) {
 
 }
 ```
+
 It seems impossible to implement it in Java in a way even remotely as compact as in JS, which seems strange for a language as mature and popular as Java. If anyone can improve the Java code to make it more compact, please [do a pull request](https://github.com/rsp/ppj/pulls) because I want that comparison to be fair.
 
 That example was not chosen specifically to favour JS. It is a school example straight from a Java class.

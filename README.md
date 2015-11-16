@@ -111,6 +111,16 @@ function even(t) {
     return t.filter(x => x % 2 == 0);
 }
 ```
+Here's a pre-ES6 version:
+
+[WhereEven-es5.js](https://github.com/rsp/ppj/blob/master/WhereEven-es5.js)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/WhereEven-es5.js))
+
+```js
+function even(t) {
+    return t.filter(function(x){ return x % 2 == 0; });
+}
+```
 
 It's even better in Scheme:
 

@@ -179,6 +179,24 @@ function eosort(t) {
 
 }
 ```
+
+Here is also an non-ES6 version of the above code that should conform to the original version of the language from 1997 (please [post an issue](https://github.com/rsp/ppj/issues) if that is not the case). The only difference is more cluttered syntax but there are still exactly the same expressions:
+
+[TwoWaySort-es5.js](https://github.com/rsp/ppj/blob/master/TwoWaySort-es5.js)
+([download](https://raw.githubusercontent.com/rsp/ppj/master/TwoWaySort-es5.js))
+
+```js
+function eosort(t) {
+
+    var b = [t.filter(function(x){ return x % 2 == 0; }).sort(),
+             t.filter(function(x){ return x % 2; }).sort().reverse()],
+        i = [0,0], r = t.map(function(x){ return b[x%2][i[x%2]++]; });
+
+    return r;
+
+}
+```
+
 It seems impossible to implement it in Java in a way even remotely as compact as in JS, which seems strange for a language as mature and popular as Java. If anyone can improve the Java code to make it more compact, please [do a pull request](https://github.com/rsp/ppj/pulls) because I want that comparison to be fair.
 
 That example was not chosen specifically to favour JS. It is a school example straight from a Java class.

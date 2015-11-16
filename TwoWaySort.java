@@ -1,8 +1,6 @@
 public class TwoWaySort {
 
-    static void eosort(int[] t) {
-
-        printInts(t);
+    static int[] eosort(int[] t) {
 
         int i, ei, oi, l = t.length;
 
@@ -29,7 +27,7 @@ public class TwoWaySort {
         for (i=ei=oi=0; i < l; i++)
             r[i] = t[i] % 2 == 0 ? e[ei++] : o[oi++];
 
-        printInts(r);
+        return r;
 
     }
 
@@ -43,7 +41,9 @@ public class TwoWaySort {
 
         int[] t = {0,1,2,3,4,5,6,7,8,9};
 
-        eosort(t);
+        printInts(t);
+
+        printInts(eosort(t));
 
     }
 

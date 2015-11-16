@@ -114,6 +114,7 @@ It's even better in Scheme:
 (define (even t)
     (filter even? t))
 ```
+Not bad for a language that's 40 years old.
 
 Download
 --------
